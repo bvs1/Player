@@ -1,0 +1,11 @@
+$(document).ready(function() {
+		var json = {
+			tracks: [
+				{name: "Born to die", artist: "Lana Del Ray", src: "media/lana.mp3", img: "img/album-img1.png"},
+				{name: "Clearest Blue", artist: "CHVRCHES", src: "media/CHVRCHES.mp3", img: "img/clearest_blue.png"},
+				{name: "Hymn For The Weekend (Amice Remix)", artist: "Coldplay", src: "media/Coldplay.mp3", img: "img/coldplay.png"},
+				{name: "Light It Up (Remix)", artist: "Major Lazer feat. Nyla & Fuse ODG", src: "media/Major Lazer.mp3", img: "img/major.png"}			
+			]
+		}
+		$('.widget').playerInit(json);
+	});

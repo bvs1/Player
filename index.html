@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio player</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script src="js/player.jq.js"></script>
+	<script src="js/playlist.json"></script>
+</head>
+<body>
+	<div class="widget">
+		<div class="widget_body">
+			<audio></audio>
+			<div class="player_control_panel">
+				<!-- Player control buttons -->
+				<div class="player_controls">
+					<div class="rewind"></div>
+					<div class="play"></div>
+					<div class="forward"></div>
+				</div>
+
+				<!--progress bar-->
+				<div class="progress_bar"></div>
+				<div class="progress_control"></div>
+
+				<!-- icons for control playlist-->
+				<div class="container">
+					<div class="icons">
+						<a class="shuffle"></a>
+						<a class="repeat"></a>
+						<a class="volume"></a>
+					</div>
+
+					<!-- Title-->
+					<div class="title">
+						<p><label></label></p>
+					</div>
+
+					<!-- Time -->
+					<div class="time">
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- volume regulator -->
+			<div class="volume_control">
+				<div class="volume_control_bar">
+					<progress value="50"></progress>
+				</div>
+				<img class="volume_min" src="img/volume_min.png">
+				<img class="volume_max" src="img/volume_max.png">
+				<div class="volume_changer"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
